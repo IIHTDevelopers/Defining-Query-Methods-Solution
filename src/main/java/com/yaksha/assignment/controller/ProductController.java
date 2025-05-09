@@ -19,7 +19,7 @@ public class ProductController {
 	private ProductRepository productRepository;
 
 	// Create a product (POST)
-	@PostMapping
+	@PostMapping("/api/products")
 	public Product createProduct(@RequestBody Product product) {
 		return productRepository.save(product);
 	}
